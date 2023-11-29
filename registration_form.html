@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Kreon:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="main__header">
+      <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="navbar-header"> <a href="#" onClick="javascript.void()" class="submenu">Menus</a> </div>
+          <div class="menuBar">
+            <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+			  <li class="active"><a href="registration_form.html">Register</a></li>
+              <li><a href="matches.html">Matches</a></li>
+              <li><a href="rankingpage.html">Ranking</a></li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse --> 
+        </nav>
+      </div>
+    </header>
+
+    <section>
+		<div>
+        <img class="full-width" src="https://chessstreamers.com/wp-content/uploads/2019/12/chessstreamers_banner-1600x533.jpg">
+      </div>
+      <div class="container">
+		<div class = "form-body">
+			<iframe class = "register" src="https://docs.google.com/forms/d/e/1FAIpQLScpFLw70m_CBcJ5lRS5sXLtr0DItgdxGPLbCXpoddPdNLMPsQ/viewform?embedded=true" width="640" height="988" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+		</div>
+      </div>
+    </section>
+
+	<p class="text-center copyright">&copy; Copyright VRMC. All Rights Reserved.</p>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script type="text/javascript" src="js/jquery.min.js"></script> 
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/bootstrap.min.js"></script> 
+    <script type="text/javascript">
+    
+    $('.carousel').carousel({
+      interval: 3500, // in milliseconds
+      pause: 'none' // set to 'true' to pause slider on mouse hover
+    })
+    
+    </script> 
+    <script type="text/javascript">
+    $( "a.submenu" ).click(function() {
+    $( ".menuBar" ).slideToggle( "normal", function() {
+    // Animation complete.
+    });
+    });
+    $( "ul li.dropdown a" ).click(function() {
+    $( "ul li.dropdown ul" ).slideToggle( "normal", function() {
+    // Animation complete.
+    });
+    $('ul li.dropdown').toggleClass('current');
+    });
+    </script>
+  </body>
+</html>
